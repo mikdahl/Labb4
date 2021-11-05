@@ -15,28 +15,51 @@ $font-oxygen: 'Oxygen', sans-serif;
 
 //=======================================================================
 //
-
-{box-sizing: border-box;}
-
-  /* Style the input field inside the navbar */
-  .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: solid;
+/* Search box styling */
+.search-container{box-sizing: border-box;
+  position: absolute;
+  width: 169px;
+  height: 29px;
+  left: 1083px;
+  top: 14px;
+  background: #FFFFFF;
+  border: 0.5px solid #1E2D37;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-/* Style the button inside the input container */
-.topnav .search-container button {
-float: right;
-padding: 6px;
-margin-top: 8px;
-margin-right: 16px;
-background: #ddd;
-font-size: 17px;
-border: none;
-cursor: pointer;
+
+/* Search articles */
+
+.topnav input[type=text]
+{position: absolute;
+width: 120px;
+height: 16px;
+left: 1121px;
+top: 20px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+
+color: #1E2D37;
+font-size: $article-body;
+font-weight: $weight-regular;
 }
+
+/* Search Icon */
+
+
+{position: absolute;
+left: 76.25%;
+right: 22.88%;
+top: 2.13%;
+bottom: 96.71%;
+
+background: #1E2D37;}
+
 /* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav .search-container {
