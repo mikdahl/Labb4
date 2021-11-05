@@ -9,45 +9,151 @@ $article-body: 13px;
 $article-info:10px;
 $color-white: #ffffff;
 $color-blueblack: #1E2D37;
-$article-overlay: rgb(0,0,0, 0.7);
-$font-lora: "Lora", serif;
-$font-oxygen: "Oxygen", sans-serif;
+$article-overlay: rgb(0,0,0, 0.7); 
+$font-lora: 'Lora', serif;
+$font-oxygen: 'Oxygen', sans-serif;
 
-//=======================================================================
-//
+
 h1{
-  color:$color-blueblack;
-  font-size: $logotype;
-  font-weight:$weight-bold;
-  font-family: "Ceviche one";
-}
-
-nav {
-  position: absolute;
-  width: 1440px;
-  left: 0px;
-  right: 0px;
-  background: $color-white;
-  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
-
-  ul {
+    color:$color-blueblack;
+    font-size: $logotype;
+    font-weight:$weight-bold;
+    font-family: "Ceviche one";
+    }
+    
+    
+    
+    nav {
+    position: absolute;
+    width: 1440px;
+    left: 0px;
+    right: 0px;
+    background: $color-white;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    
+    
+    
+    ul {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  li {
+    }
+    
+    
+    
+    li {
     display: inline-block;
-  }
-
-  a {
+    }
+    
+    
+    
+    a {
     display: block;
     padding: 6px 12px;
     text-decoration: none;
     color: $color-blueblack
-  }
+    }
+    }
+    
+    
+    
+    a:hover{
+    color: blue;
+    }
+
+
+
+//=======================================================================
+// CSS properties for the Grid container, grid item and single Item
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+
+    .grid-item{
+        position: relative;
+
+        //CSS class & properties for text inside the article to handle positioning
+        .textInSmallArticle{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            margin-left: 180px;
+            color: $color-blueblack;
+        }
+        
+        .textInArticle{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;   
+            background-color: $article-overlay;
+
+            h2{
+                padding-left: 30px;
+            }
+            h4{
+                padding-left: 30px;
+            }
+            p{
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .article1{
+        color: $color-white;
+        min-height: 550px;
+        min-width: 650px;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 4;
+        img{
+            width:100%;
+            height:100%;
+        }
+        
+    }
+    .article2{
+        color: $color-white;
+        min-height: 300px;
+        min-width:400px;
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .article3{
+        color: $color-white;
+        min-height:140px;
+        min-width:180px;
+        grid-column:3;
+        grid-row: 3;
+        img{
+            width:170px;
+            height:100%;
+        }
+    }
+    .article4{
+        color: $color-white;
+        min-height:140px;
+        min-width:180px;
+        grid-column:3;
+        grid-row: 4;
+        img{
+            width:170px;
+            height:100%;
+        }
+    }
 }
 
-a:hover{
-  color: blue;
+//======================================================================
+//CSS class & properties for the content container
+#content-container{
+    max-width: 1064px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
