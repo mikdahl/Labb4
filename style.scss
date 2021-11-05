@@ -22,43 +22,79 @@ $font-oxygen: 'Oxygen', sans-serif;
     padding: 10px;
 
     .grid-item{
-        text-align: center;
-        padding:20px 0px; 
         position: relative;
+
+        //CSS class & properties for text inside the article to handle positioning
+        .textInSmallArticle{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            margin-left: 180px;
+            color: $color-blueblack;
+        }
+        
+        .textInArticle{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;   
+            background-color: $article-overlay;
+
+            h2{
+                padding-left: 30px;
+            }
+            h4{
+                padding-left: 30px;
+            }
+            p{
+                padding-left: 30px;
+            }
+        }
     }
 
     .article1{
-        background-color: $color-blueblack;
         color: $color-white;
         min-height: 550px;
         min-width: 650px;
         grid-column: 1 / span 2;
         grid-row: 1 / span 4;
+        img{
+            width:100%;
+            height:100%;
+        }
         
     }
     .article2{
-        background-color: $color-blueblack;
         color: $color-white;
         min-height: 300px;
         min-width:400px;
         grid-column: 3;
         grid-row: 1 / span 2;
+        img{
+            width:100%;
+            height:100%;
+        }
     }
     .article3{
-        background-color: $color-blueblack;
         color: $color-white;
         min-height:140px;
         min-width:180px;
         grid-column:3;
         grid-row: 3;
+        img{
+            width:170px;
+            height:100%;
+        }
     }
     .article4{
-        background-color: $color-blueblack;
         color: $color-white;
         min-height:140px;
         min-width:180px;
         grid-column:3;
         grid-row: 4;
+        img{
+            width:170px;
+            height:100%;
+        }
     }
 }
 
@@ -68,13 +104,6 @@ $font-oxygen: 'Oxygen', sans-serif;
     max-width: 1064px;
     margin-left: auto;
     margin-right: auto;
-}
-
-//======================================================================
-//CSS class & properties for text inside the article to handle positioning
-.textInArticle{
-    position: absolute;
-    bottom: 30px;
-    left: 30px;    
 
 }
+
