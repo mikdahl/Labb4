@@ -1,17 +1,35 @@
-/* Error: expected ";".
- *    ,
- * 21 |   font-weight:$weight-bold
- *    |              ^
- *    '
- *   style.scss 21:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 21 \2502    font-weight:$weight-bold\d\a    \2502               ^\a    \2575 \a   style.scss 21:14  root stylesheet';
+h1 {
+  color: #1E2D37;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Ceviche one";
 }
+
+nav {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  right: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #1E2D37;
+}
+
+a:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

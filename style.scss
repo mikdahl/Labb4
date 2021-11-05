@@ -10,18 +10,26 @@ $article-info:10px;
 $color-white: #ffffff;
 $color-blueblack: #1E2D37;
 $article-overlay: rgb(0,0,0, 0.7);
-$font-lora: 'Lora', serif;
-$font-oxygen: 'Oxygen', sans-serif;
+$font-lora: "Lora", serif;
+$font-oxygen: "Oxygen", sans-serif;
 
 //=======================================================================
 //
 h1{
   color:$color-blueblack;
-  font-size: $logotype
-  font-weight:$weight-bold
+  font-size: $logotype;
+  font-weight:$weight-bold;
+  font-family: "Ceviche one";
 }
 
 nav {
+  position: absolute;
+  width: 1440px;
+  left: 0px;
+  right: 0px;
+  background: $color-white;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+
   ul {
     margin: 0;
     padding: 0;
@@ -38,4 +46,8 @@ nav {
     text-decoration: none;
     color: $color-blueblack
   }
+}
+
+a:hover{
+  color: blue;
 }
