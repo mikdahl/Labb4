@@ -9,9 +9,33 @@ $article-body: 13px;
 $article-info:10px;
 $color-white: #ffffff;
 $color-blueblack: #1E2D37;
-$article-overlay: rgb(0,0,0, 0.7); 
+$article-overlay: rgb(0,0,0, 0.7);
 $font-lora: 'Lora', serif;
 $font-oxygen: 'Oxygen', sans-serif;
 
 //=======================================================================
 //
+h1{
+  color:$color-blueblack;
+  font-size: $logotype
+  font-weight:$weight-bold
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: $color-blueblack
+  }
+}
